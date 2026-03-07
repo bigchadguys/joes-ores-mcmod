@@ -1,0 +1,10 @@
+{
+  "type": "ores:morphite_synthesizing",
+  "result": {
+    "count": 1,
+    "id": "ores:geovar_ingot"
+  },
+  "upgrade": {
+    "item": "ores:tectonic_shard"
+  }
+}

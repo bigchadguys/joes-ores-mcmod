@@ -1,0 +1,10 @@
+{
+  "type": "ores:morphite_synthesizing",
+  "result": {
+    "count": 1,
+    "id": "ores:florite_ingot"
+  },
+  "upgrade": {
+    "item": "ores:mush"
+  }
+}

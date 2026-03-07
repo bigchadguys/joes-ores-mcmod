@@ -1,0 +1,17 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="ores"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+description='''${mod_description}'''
+
+[[dependencies.ores]]
+modId="emi"
+mandatory=false
+versionRange="[1.1.0,)"
+ordering="AFTER"
+side="CLIENT"
