@@ -14,6 +14,8 @@ import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Objects;
+
 public class AdamantiteFurnaceMenu extends AbstractContainerMenu {
     private final Container container;
     private final ContainerData data;
@@ -21,7 +23,7 @@ public class AdamantiteFurnaceMenu extends AbstractContainerMenu {
 
     public AdamantiteFurnaceMenu(int windowId, Inventory playerInventory, FriendlyByteBuf extraData) {
         this(ModMenuTypes.ADAMANTITE_FURNACE_MENU.get(), windowId, playerInventory,
-                (AdamantiteFurnaceBlockEntity) playerInventory.player.level().getBlockEntity(extraData.readBlockPos()),
+                (AdamantiteFurnaceBlockEntity) Objects.requireNonNull(playerInventory.player.level().getBlockEntity(extraData.readBlockPos())),
                 new SimpleContainer(3), new SimpleContainerData(4));
     }
 

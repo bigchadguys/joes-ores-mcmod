@@ -21,6 +21,9 @@ public class CobaltFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
     private final RecipeManager.CachedCheck<SingleRecipeInput, SmeltingRecipe> recipeCheck =
             RecipeManager.createCheck(RecipeType.SMELTING);
 
+    private boolean inputRecipeDirty = true;
+    private int cachedCookTime = AbstractFurnaceBlockEntity.BURN_TIME_STANDARD;
+
     public CobaltFurnaceBlockEntity(BlockPos pos, BlockState state) {
         super(
                 ModBlockEntities.COBALT_FURNACE_BLOCK_ENTITY.get(),
@@ -46,28 +49,48 @@ public class CobaltFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
                 playerInventory,
                 this,
                 this,
-                dataAccess
+                this.dataAccess
         );
     }
 
     @Override
     public void setItem(int slot, @NotNull ItemStack stack) {
         super.setItem(slot, stack);
+
         if (slot == 0) {
-            int halfCookTime = Math.max(1, getRecipeCookTime(getLevel()) / 2);
-            dataAccess.set(DATA_COOKING_TOTAL_TIME, halfCookTime);
-            dataAccess.set(DATA_COOKING_PROGRESS, 0);
+            this.inputRecipeDirty = true;
+            this.dataAccess.set(DATA_COOKING_PROGRESS, 0);
+
+            Level level = this.getLevel();
+            if (level != null) {
+                refreshRecipeCache(level);
+                int halfCookTime = Math.max(1, this.cachedCookTime / 2);
+                if (this.dataAccess.get(DATA_COOKING_TOTAL_TIME) != halfCookTime) {
+                    this.dataAccess.set(DATA_COOKING_TOTAL_TIME, halfCookTime);
+                }
+            }
+
             setChanged();
         }
     }
 
-    private int getRecipeCookTime(Level world) {
-        if (world == null || items.getFirst().isEmpty()) {
-            return AbstractFurnaceBlockEntity.BURN_TIME_STANDARD;
+    private void refreshRecipeCache(Level world) {
+        if (world == null) {
+            return;
         }
-        return recipeCheck.getRecipeFor(new SingleRecipeInput(getItem(0)), world)
+
+        ItemStack input = this.getItem(0);
+        if (input.isEmpty()) {
+            this.cachedCookTime = AbstractFurnaceBlockEntity.BURN_TIME_STANDARD;
+            this.inputRecipeDirty = false;
+            return;
+        }
+
+        this.cachedCookTime = this.recipeCheck.getRecipeFor(new SingleRecipeInput(input), world)
                 .map(holder -> holder.value().getCookingTime())
                 .orElse(AbstractFurnaceBlockEntity.BURN_TIME_STANDARD);
+
+        this.inputRecipeDirty = false;
     }
 
     public static boolean isFuel(ItemStack stack) {
@@ -75,7 +98,7 @@ public class CobaltFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
     }
 
     public boolean isLit() {
-        return dataAccess.get(DATA_LIT_TIME) > 0;
+        return this.dataAccess.get(DATA_LIT_TIME) > 0;
     }
 
     public static void serverTick(
@@ -84,12 +107,22 @@ public class CobaltFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
             BlockState state,
             CobaltFurnaceBlockEntity furnace
     ) {
+        if (!furnace.isLit()
+                && furnace.getItem(0).isEmpty()
+                && furnace.getItem(1).isEmpty()
+                && furnace.dataAccess.get(DATA_COOKING_PROGRESS) == 0) {
+            return;
+        }
+
+        if (furnace.inputRecipeDirty) {
+            furnace.refreshRecipeCache(world);
+        }
+
         AbstractFurnaceBlockEntity.serverTick(world, pos, state, furnace);
-        if (furnace.dataAccess.get(DATA_COOKING_PROGRESS) == 0
-                && furnace.dataAccess.get(DATA_COOKING_TOTAL_TIME) > 0
-        ) {
-            int updatedTotal = Math.max(1, furnace.getRecipeCookTime(world) / 2);
-            furnace.dataAccess.set(DATA_COOKING_TOTAL_TIME, updatedTotal);
+
+        int expectedTotal = Math.max(1, furnace.cachedCookTime / 2);
+        if (furnace.dataAccess.get(DATA_COOKING_TOTAL_TIME) != expectedTotal) {
+            furnace.dataAccess.set(DATA_COOKING_TOTAL_TIME, expectedTotal);
         }
     }
 }
