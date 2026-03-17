@@ -57,7 +57,7 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_ADAMANTITE_KEY, Feature.ORE, new OreConfiguration(List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.ADAMANTITE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_ADAMANTITE_ORE.get().defaultBlockState())
-        ), 3));
+        ), 4));
 
         register(context, OVERWORLD_CELESTIUM_KEY, Feature.ORE, new OreConfiguration(List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.CELESTIUM_ORE.get().defaultBlockState()),
@@ -75,7 +75,7 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_TECTONIC_KEY, Feature.ORE, new OreConfiguration(List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.TECTONIC_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_TECTONIC_ORE.get().defaultBlockState())
-        ), 1));
+        ), 2));
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
