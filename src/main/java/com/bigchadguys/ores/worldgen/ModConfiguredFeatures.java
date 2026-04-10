@@ -62,20 +62,20 @@ public class ModConfiguredFeatures {
         register(context, OVERWORLD_CELESTIUM_KEY, Feature.ORE, new OreConfiguration(List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.CELESTIUM_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_CELESTIUM_ORE.get().defaultBlockState())
-        ), 2));
+        ), 3));
 
         register(context, END_VIRIDIUM_KEY, Feature.ORE, new OreConfiguration(endStoneReplaceables,
-                ModBlocks.VIRIDIUM_ORE.get().defaultBlockState(), 4));
+                ModBlocks.VIRIDIUM_ORE.get().defaultBlockState(), 5));
 
         register(context, OVERWORLD_MORPHITE_KEY, Feature.ORE, new OreConfiguration(List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.MORPHITE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_MORPHITE_ORE.get().defaultBlockState())
-        ), 2));
+        ), 3));
 
         register(context, OVERWORLD_TECTONIC_KEY, Feature.ORE, new OreConfiguration(List.of(
                 OreConfiguration.target(stoneReplaceables, ModBlocks.TECTONIC_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_TECTONIC_ORE.get().defaultBlockState())
-        ), 2));
+        ), 3));
     }
 
     private static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
