@@ -122,8 +122,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         );
 
         tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL).add(
-                ModBlocks.ORICHALCUM_ORE.get(),
-                ModBlocks.DEEPSLATE_ORICHALCUM_ORE.get(),
                 ModBlocks.ADAMANTITE_ORE.get(),
                 ModBlocks.DEEPSLATE_ADAMANTITE_ORE.get(),
                 ModBlocks.CELESTIUM_ORE.get(),
