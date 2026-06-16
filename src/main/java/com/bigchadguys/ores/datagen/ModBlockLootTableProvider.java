@@ -95,6 +95,19 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(ModBlocks.DEEPSLATE_TECTONIC_ORE.get(), ModItems.TECTONIC_SHARD.get())
         );
 
+        dropSelf(ModBlocks.COBALT_BLOCK.get());
+        dropSelf(ModBlocks.MAGNITE_BLOCK.get());
+        dropSelf(ModBlocks.MYTHRIL_BLOCK.get());
+        dropSelf(ModBlocks.ORICHALCUM_BLOCK.get());
+        dropSelf(ModBlocks.ADAMANTITE_BLOCK.get());
+        dropSelf(ModBlocks.LUNARIUM_BLOCK.get());
+        dropSelf(ModBlocks.SOLARIUM_BLOCK.get());
+        dropSelf(ModBlocks.VIRIDIUM_BLOCK.get());
+        dropSelf(ModBlocks.NECRONIUM_BLOCK.get());
+        dropSelf(ModBlocks.FLORITE_BLOCK.get());
+        dropSelf(ModBlocks.GEOVAR_BLOCK.get());
+        dropSelf(ModBlocks.PETRAFITE_BLOCK.get());
+        dropSelf(ModBlocks.SWIFTITE_BLOCK.get());
         dropSelf(ModBlocks.COBALT_FURNACE.get());
         dropSelf(ModBlocks.ADAMANTITE_FURNACE.get());
         dropSelf(ModBlocks.MORPHITE_SYNTHESIZER.get());

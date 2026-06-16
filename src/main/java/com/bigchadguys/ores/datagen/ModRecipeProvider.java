@@ -202,9 +202,44 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(recipeOutput);
     }
 
+    protected static void registerStorageRecipes(
+            @NotNull RecipeOutput recipeOutput,
+            @NotNull ItemLike nugget,
+            @NotNull ItemLike ingot,
+            @NotNull ItemLike block,
+            @NotNull String materialName
+    ) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ingot)
+                .pattern("NNN")
+                .pattern("NNN")
+                .pattern("NNN")
+                .define('N', nugget)
+                .unlockedBy("has_" + getItemName(nugget), has(nugget))
+                .save(recipeOutput, JoesOres.MOD_ID + ":" + materialName + "_ingot_from_nuggets");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, nugget, 9)
+                .requires(ingot)
+                .unlockedBy("has_" + getItemName(ingot), has(ingot))
+                .save(recipeOutput, JoesOres.MOD_ID + ":" + materialName + "_nugget_from_ingot");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, block)
+                .pattern("III")
+                .pattern("III")
+                .pattern("III")
+                .define('I', ingot)
+                .unlockedBy("has_" + getItemName(ingot), has(ingot))
+                .save(recipeOutput, JoesOres.MOD_ID + ":" + materialName + "_block_from_ingots");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ingot, 9)
+                .requires(block)
+                .unlockedBy("has_" + getItemName(block), has(block))
+                .save(recipeOutput, JoesOres.MOD_ID + ":" + materialName + "_ingot_from_block");
+    }
+
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
         record OreData(List<ItemLike> smeltables, ItemLike ingotItem, String unlockName) { }
+        record StorageData(ItemLike nuggetItem, ItemLike ingotItem, ItemLike ingotBlock) { }
 
         MorphiteSynthesizerRecipeBuilder
                 .create(
@@ -273,6 +308,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         ModItems.VIRIDIUM_INGOT.get(),
                         "viridium_ingot"
                 )
+        );
+
+        Map<String, StorageData> storageMap = Map.ofEntries(
+                Map.entry("magnite", new StorageData(ModItems.MAGNITE_NUGGET.get(), ModItems.MAGNITE_INGOT.get(), ModBlocks.MAGNITE_BLOCK.get())),
+                Map.entry("cobalt", new StorageData(ModItems.COBALT_NUGGET.get(), ModItems.COBALT_INGOT.get(), ModBlocks.COBALT_BLOCK.get())),
+                Map.entry("mythril", new StorageData(ModItems.MYTHRIL_NUGGET.get(), ModItems.MYTHRIL_INGOT.get(), ModBlocks.MYTHRIL_BLOCK.get())),
+                Map.entry("orichalcum", new StorageData(ModItems.ORICHALCUM_NUGGET.get(), ModItems.ORICHALCUM_INGOT.get(), ModBlocks.ORICHALCUM_BLOCK.get())),
+                Map.entry("adamantite", new StorageData(ModItems.ADAMANTITE_NUGGET.get(), ModItems.ADAMANTITE_INGOT.get(), ModBlocks.ADAMANTITE_BLOCK.get())),
+                Map.entry("lunarium", new StorageData(ModItems.LUNARIUM_NUGGET.get(), ModItems.LUNARIUM_INGOT.get(), ModBlocks.LUNARIUM_BLOCK.get())),
+                Map.entry("solarium", new StorageData(ModItems.SOLARIUM_NUGGET.get(), ModItems.SOLARIUM_INGOT.get(), ModBlocks.SOLARIUM_BLOCK.get())),
+                Map.entry("viridium", new StorageData(ModItems.VIRIDIUM_NUGGET.get(), ModItems.VIRIDIUM_INGOT.get(), ModBlocks.VIRIDIUM_BLOCK.get())),
+                Map.entry("necronium", new StorageData(ModItems.NECRONIUM_NUGGET.get(), ModItems.NECRONIUM_INGOT.get(), ModBlocks.NECRONIUM_BLOCK.get())),
+                Map.entry("florite", new StorageData(ModItems.FLORITE_NUGGET.get(), ModItems.FLORITE_INGOT.get(), ModBlocks.FLORITE_BLOCK.get())),
+                Map.entry("geovar", new StorageData(ModItems.GEOVAR_NUGGET.get(), ModItems.GEOVAR_INGOT.get(), ModBlocks.GEOVAR_BLOCK.get())),
+                Map.entry("petrafite", new StorageData(ModItems.PETRAFITE_NUGGET.get(), ModItems.PETRAFITE_INGOT.get(), ModBlocks.PETRAFITE_BLOCK.get())),
+                Map.entry("swiftite", new StorageData(ModItems.SWIFTITE_NUGGET.get(), ModItems.SWIFTITE_INGOT.get(), ModBlocks.SWIFTITE_BLOCK.get()))
         );
 
         record ToolArmorData(
@@ -396,6 +447,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         );
+
+        for (Map.Entry<String, StorageData> entry : storageMap.entrySet()) {
+            StorageData data = entry.getValue();
+
+            registerStorageRecipes(
+                    recipeOutput,
+                    data.nuggetItem(),
+                    data.ingotItem(),
+                    data.ingotBlock(),
+                    entry.getKey()
+            );
+        }
 
         for (Map.Entry<String, OreData> entry : ores.entrySet()) {
             OreData data = entry.getValue();

@@ -22,29 +22,43 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.COBALT_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_COBALT_ORE);
+        blockWithItem(ModBlocks.COBALT_BLOCK);
 
         blockWithItem(ModBlocks.MAGNITE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_MAGNITE_ORE);
+        blockWithItem(ModBlocks.MAGNITE_BLOCK);
 
         blockWithItem(ModBlocks.MYTHRIL_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_MYTHRIL_ORE);
+        blockWithItem(ModBlocks.MYTHRIL_BLOCK);
 
         blockWithItem(ModBlocks.ORICHALCUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ORICHALCUM_ORE);
+        blockWithItem(ModBlocks.ORICHALCUM_BLOCK);
 
         blockWithItem(ModBlocks.ADAMANTITE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_ADAMANTITE_ORE);
+        blockWithItem(ModBlocks.ADAMANTITE_BLOCK);
 
         blockWithItem(ModBlocks.CELESTIUM_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_CELESTIUM_ORE);
+        blockWithItem(ModBlocks.LUNARIUM_BLOCK);
+        blockWithItem(ModBlocks.SOLARIUM_BLOCK);
 
         blockWithItem(ModBlocks.VIRIDIUM_ORE);
+        blockWithItem(ModBlocks.VIRIDIUM_BLOCK);
 
         blockWithItem(ModBlocks.MORPHITE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_MORPHITE_ORE);
 
         blockWithItem(ModBlocks.TECTONIC_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_TECTONIC_ORE);
+
+        blockWithItem(ModBlocks.NECRONIUM_BLOCK);
+        blockWithItem(ModBlocks.FLORITE_BLOCK);
+        blockWithItem(ModBlocks.GEOVAR_BLOCK);
+        blockWithItem(ModBlocks.PETRAFITE_BLOCK);
+        blockWithItem(ModBlocks.SWIFTITE_BLOCK);
 
         furnaceBlock(ModBlocks.COBALT_FURNACE.get(), "cobalt_furnace");
         furnaceBlock(ModBlocks.ADAMANTITE_FURNACE.get(), "adamantite_furnace");

@@ -152,7 +152,14 @@ public class AdamantiteFurnaceBlockEntity extends AbstractFurnaceBlockEntity {
             int burnTime = 1600;
             furnace.dataAccess.set(DATA_LIT_TIME, burnTime);
             furnace.dataAccess.set(DATA_LIT_DURATION, burnTime);
+
+            ItemStack remainder = fuelStack.getCraftingRemainingItem();
             fuelStack.shrink(1);
+
+            if (fuelStack.isEmpty() && !remainder.isEmpty()) {
+                furnace.items.set(1, remainder.copy());
+            }
+
             dirty = true;
         }
 

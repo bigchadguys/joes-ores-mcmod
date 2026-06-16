@@ -16,14 +16,28 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_MORPHITE.get());
         basicItem(ModItems.PETRIFIED_BARK.get());
         basicItem(ModItems.PETRAFITE_INGOT.get());
+        basicItem(ModItems.PETRAFITE_NUGGET.get());
         basicItem(ModItems.MUSH.get());
         basicItem(ModItems.FLORITE_INGOT.get());
+        basicItem(ModItems.FLORITE_NUGGET.get());
         basicItem(ModItems.ECTOPLASM.get());
         basicItem(ModItems.NECRONIUM_INGOT.get());
+        basicItem(ModItems.NECRONIUM_NUGGET.get());
         basicItem(ModItems.TECTONIC_SHARD.get());
         basicItem(ModItems.GEOVAR_INGOT.get());
+        basicItem(ModItems.GEOVAR_NUGGET.get());
         basicItem(ModItems.QUICKSILVER.get());
         basicItem(ModItems.SWIFTITE_INGOT.get());
+        basicItem(ModItems.SWIFTITE_NUGGET.get());
+
+        basicItem(ModItems.MAGNITE_NUGGET.get());
+        basicItem(ModItems.COBALT_NUGGET.get());
+        basicItem(ModItems.MYTHRIL_NUGGET.get());
+        basicItem(ModItems.ORICHALCUM_NUGGET.get());
+        basicItem(ModItems.ADAMANTITE_NUGGET.get());
+        basicItem(ModItems.LUNARIUM_NUGGET.get());
+        basicItem(ModItems.SOLARIUM_NUGGET.get());
+        basicItem(ModItems.VIRIDIUM_NUGGET.get());
 
         handheldItem(ModItems.COPPER_SWORD.get());
         handheldItem(ModItems.COPPER_PICKAXE.get());

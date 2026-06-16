@@ -29,6 +29,20 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 ModItems.LUNARIUM_INGOT.get()
         );
 
+        tag(ModItemTags.MAGNITE_TOOLS).add(
+                ModItems.MAGNITE_PICKAXE.get(),
+                ModItems.MAGNITE_AXE.get(),
+                ModItems.MAGNITE_SHOVEL.get(),
+                ModItems.MAGNITE_HOE.get()
+        );
+
+        tag(ModItemTags.COBALT_TOOLS).add(
+                ModItems.COBALT_PICKAXE.get(),
+                ModItems.COBALT_AXE.get(),
+                ModItems.COBALT_SHOVEL.get(),
+                ModItems.COBALT_HOE.get()
+        );
+
         tag(ModItemTags.MYTHRIL_TOOLS).add(
                 ModItems.MYTHRIL_PICKAXE.get(),
                 ModItems.MYTHRIL_AXE.get(),
@@ -55,6 +69,13 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 ModItems.CELESTIUM_AXE.get(),
                 ModItems.CELESTIUM_SHOVEL.get(),
                 ModItems.CELESTIUM_HOE.get()
+        );
+
+        tag(ModItemTags.VIRIDIUM_TOOLS).add(
+                ModItems.VIRIDIUM_PICKAXE.get(),
+                ModItems.VIRIDIUM_AXE.get(),
+                ModItems.VIRIDIUM_SHOVEL.get(),
+                ModItems.VIRIDIUM_HOE.get()
         );
 
         tag(ItemTags.SWORDS).add(

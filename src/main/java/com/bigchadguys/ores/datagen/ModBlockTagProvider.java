@@ -68,25 +68,37 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
                 ModBlocks.COBALT_ORE.get(),
                 ModBlocks.DEEPSLATE_COBALT_ORE.get(),
+                ModBlocks.COBALT_BLOCK.get(),
                 ModBlocks.MAGNITE_ORE.get(),
                 ModBlocks.DEEPSLATE_MAGNITE_ORE.get(),
+                ModBlocks.MAGNITE_BLOCK.get(),
                 ModBlocks.MYTHRIL_ORE.get(),
                 ModBlocks.DEEPSLATE_MYTHRIL_ORE.get(),
+                ModBlocks.MYTHRIL_BLOCK.get(),
                 ModBlocks.ORICHALCUM_ORE.get(),
                 ModBlocks.DEEPSLATE_ORICHALCUM_ORE.get(),
+                ModBlocks.ORICHALCUM_BLOCK.get(),
                 ModBlocks.ADAMANTITE_ORE.get(),
                 ModBlocks.DEEPSLATE_ADAMANTITE_ORE.get(),
+                ModBlocks.ADAMANTITE_BLOCK.get(),
                 ModBlocks.CELESTIUM_ORE.get(),
                 ModBlocks.DEEPSLATE_CELESTIUM_ORE.get(),
+                ModBlocks.LUNARIUM_BLOCK.get(),
+                ModBlocks.SOLARIUM_BLOCK.get(),
                 ModBlocks.VIRIDIUM_ORE.get(),
+                ModBlocks.VIRIDIUM_BLOCK.get(),
                 ModBlocks.MORPHITE_ORE.get(),
                 ModBlocks.DEEPSLATE_MORPHITE_ORE.get(),
                 ModBlocks.TECTONIC_ORE.get(),
                 ModBlocks.DEEPSLATE_TECTONIC_ORE.get(),
+                ModBlocks.NECRONIUM_BLOCK.get(),
+                ModBlocks.FLORITE_BLOCK.get(),
+                ModBlocks.GEOVAR_BLOCK.get(),
+                ModBlocks.PETRAFITE_BLOCK.get(),
+                ModBlocks.SWIFTITE_BLOCK.get(),
                 ModBlocks.COBALT_FURNACE.get(),
                 ModBlocks.ADAMANTITE_FURNACE.get(),
                 ModBlocks.MORPHITE_SYNTHESIZER.get()
-
         );
 
         tag(BlockTags.INCORRECT_FOR_IRON_TOOL).add(
@@ -150,7 +162,20 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 ModBlocks.DEEPSLATE_MAGNITE_ORE.get(),
                 ModBlocks.COBALT_ORE.get(),
                 ModBlocks.DEEPSLATE_COBALT_ORE.get(),
-                ModBlocks.COBALT_FURNACE.get()
+                ModBlocks.COBALT_FURNACE.get(),
+                ModBlocks.COBALT_BLOCK.get(),
+                ModBlocks.MAGNITE_BLOCK.get(),
+                ModBlocks.MYTHRIL_BLOCK.get(),
+                ModBlocks.ORICHALCUM_BLOCK.get(),
+                ModBlocks.ADAMANTITE_BLOCK.get(),
+                ModBlocks.LUNARIUM_BLOCK.get(),
+                ModBlocks.SOLARIUM_BLOCK.get(),
+                ModBlocks.VIRIDIUM_BLOCK.get(),
+                ModBlocks.NECRONIUM_BLOCK.get(),
+                ModBlocks.FLORITE_BLOCK.get(),
+                ModBlocks.GEOVAR_BLOCK.get(),
+                ModBlocks.PETRAFITE_BLOCK.get(),
+                ModBlocks.SWIFTITE_BLOCK.get()
         );
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL).add(
