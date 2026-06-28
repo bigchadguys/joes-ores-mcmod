@@ -25,7 +25,7 @@ public record MorphiteSynthesizerRecipe(
     private static final Ingredient HARD_CODED_CATALYST =
             Ingredient.of(Items.DRAGON_BREATH);
     private static final Ingredient HARD_CODED_MORPHITE =
-            Ingredient.of(ModItems.RAW_MORPHITE.get());
+            Ingredient.of(ModItems.MORPHITE_INGOT.get());
 
     @Override
     public @NotNull NonNullList<Ingredient> getIngredients() {
