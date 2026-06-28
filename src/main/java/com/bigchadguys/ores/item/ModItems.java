@@ -295,7 +295,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> RAW_ORICHALCUM = ITEMS.registerSimpleItem("raw_orichalcum");
     public static final DeferredItem<Item> ORICHALCUM_INGOT = ITEMS.registerSimpleItem("orichalcum_ingot");
-    public static final DeferredItem<Item> ORICHALCUM_NUGGET = ITEMS.registerSimpleItem("orichalcum_ingot");
+    public static final DeferredItem<Item> ORICHALCUM_NUGGET = ITEMS.registerSimpleItem("orichalcum_nugget");
 
     public static final DeferredItem<Item> ORICHALCUM_SWORD = ITEMS.register("orichalcum_sword", () ->
             new SwordItem(
@@ -542,7 +542,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> RAW_VIRIDIUM = ITEMS.registerSimpleItem("raw_viridium");
     public static final DeferredItem<Item> VIRIDIUM_INGOT = ITEMS.registerSimpleItem("viridium_ingot");
-    public static final DeferredItem<Item> VIRIDIUM_NUGGET = ITEMS.registerSimpleItem("viridium_ingot");
+    public static final DeferredItem<Item> VIRIDIUM_NUGGET = ITEMS.registerSimpleItem("viridium_nugget");
 
     public static final DeferredItem<Item> VIRIDIUM_SWORD = ITEMS.register("viridium_sword", () ->
             new SwordItem(
@@ -612,6 +612,8 @@ public class ModItems {
     );
 
     public static final DeferredItem<Item> RAW_MORPHITE = ITEMS.registerSimpleItem("raw_morphite");
+    public static final DeferredItem<Item> MORPHITE_INGOT = ITEMS.registerSimpleItem("morphite_ingot");
+    public static final DeferredItem<Item> MORPHITE_NUGGET = ITEMS.registerSimpleItem("morphite_nugget");
     public static final DeferredItem<Item> ECTOPLASM = ITEMS.registerSimpleItem("ectoplasm");
     public static final DeferredItem<Item> NECRONIUM_INGOT = ITEMS.registerSimpleItem("necronium_ingot");
     public static final DeferredItem<Item> NECRONIUM_NUGGET = ITEMS.registerSimpleItem("necronium_nugget");

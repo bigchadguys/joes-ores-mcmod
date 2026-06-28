@@ -104,6 +104,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         }
     }
 
+    protected static ResourceLocation customRecipeId(String path) {
+        return ResourceLocation.fromNamespaceAndPath(JoesOres.MOD_ID, path);
+    }
+
     protected static void registerStandardTools(
             @NotNull RecipeOutput recipeOutput,
             @NotNull ItemLike swordOut,
@@ -307,6 +311,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         List.of(ModItems.RAW_VIRIDIUM, ModBlocks.VIRIDIUM_ORE),
                         ModItems.VIRIDIUM_INGOT.get(),
                         "viridium_ingot"
+                ),
+                "morphite", new OreData(
+                        List.of(ModItems.RAW_MORPHITE, ModBlocks.MORPHITE_ORE),
+                        ModItems.MORPHITE_INGOT.get(),
+                        "morphite_ingot"
                 )
         );
 
@@ -319,6 +328,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 Map.entry("lunarium", new StorageData(ModItems.LUNARIUM_NUGGET.get(), ModItems.LUNARIUM_INGOT.get(), ModBlocks.LUNARIUM_BLOCK.get())),
                 Map.entry("solarium", new StorageData(ModItems.SOLARIUM_NUGGET.get(), ModItems.SOLARIUM_INGOT.get(), ModBlocks.SOLARIUM_BLOCK.get())),
                 Map.entry("viridium", new StorageData(ModItems.VIRIDIUM_NUGGET.get(), ModItems.VIRIDIUM_INGOT.get(), ModBlocks.VIRIDIUM_BLOCK.get())),
+                Map.entry("morphite", new StorageData(ModItems.MORPHITE_NUGGET.get(), ModItems.RAW_MORPHITE.get(), ModBlocks.MORPHITE_BLOCK.get())),
                 Map.entry("necronium", new StorageData(ModItems.NECRONIUM_NUGGET.get(), ModItems.NECRONIUM_INGOT.get(), ModBlocks.NECRONIUM_BLOCK.get())),
                 Map.entry("florite", new StorageData(ModItems.FLORITE_NUGGET.get(), ModItems.FLORITE_INGOT.get(), ModBlocks.FLORITE_BLOCK.get())),
                 Map.entry("geovar", new StorageData(ModItems.GEOVAR_NUGGET.get(), ModItems.GEOVAR_INGOT.get(), ModBlocks.GEOVAR_BLOCK.get())),
@@ -624,6 +634,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('M', ModItems.RAW_MORPHITE.get())
                 .define('Q', Items.QUARTZ_BLOCK)
                 .unlockedBy("has_morphite_ingot", has(ModItems.RAW_MORPHITE.get()))
-                .save(recipeOutput);
+                .save(recipeOutput, customRecipeId("morphite_synthesizer_from_raw_morphite"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.MORPHITE_SYNTHESIZER.get())
+                .pattern("MMM")
+                .pattern("QMQ")
+                .pattern("QMQ")
+                .define('M', ModItems.MORPHITE_INGOT.get())
+                .define('Q', Items.QUARTZ_BLOCK)
+                .unlockedBy("has_morphite_ingot", has(ModItems.RAW_MORPHITE.get()))
+                .save(recipeOutput, customRecipeId("morphite_synthesizer_from_morphite_ingot"));
     }
 }

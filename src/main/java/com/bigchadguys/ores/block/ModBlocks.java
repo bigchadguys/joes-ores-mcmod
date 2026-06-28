@@ -100,6 +100,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> MORPHITE_ORE = registerBlock("morphite_ore", () ->
             new Block(baseOreProperties(3.0f, SoundType.STONE).requiresCorrectToolForDrops()));
 
+    public static final DeferredBlock<Block> MORPHITE_BLOCK = registerBlock("morphite_block", () ->
+            new Block(baseMetalBlockProperties()));
+
     public static final DeferredBlock<Block> DEEPSLATE_MORPHITE_ORE = registerBlock("deepslate_morphite_ore", () ->
             new Block(baseOreProperties(4.5f, SoundType.DEEPSLATE).requiresCorrectToolForDrops()));
 

@@ -14,6 +14,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.RAW_MORPHITE.get());
+        basicItem(ModItems.MORPHITE_INGOT.get());
         basicItem(ModItems.PETRIFIED_BARK.get());
         basicItem(ModItems.PETRAFITE_INGOT.get());
         basicItem(ModItems.PETRAFITE_NUGGET.get());
@@ -38,6 +39,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.LUNARIUM_NUGGET.get());
         basicItem(ModItems.SOLARIUM_NUGGET.get());
         basicItem(ModItems.VIRIDIUM_NUGGET.get());
+        basicItem(ModItems.MORPHITE_NUGGET.get());
 
         handheldItem(ModItems.COPPER_SWORD.get());
         handheldItem(ModItems.COPPER_PICKAXE.get());

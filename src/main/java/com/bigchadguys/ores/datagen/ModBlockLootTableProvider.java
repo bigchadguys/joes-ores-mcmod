@@ -108,6 +108,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.GEOVAR_BLOCK.get());
         dropSelf(ModBlocks.PETRAFITE_BLOCK.get());
         dropSelf(ModBlocks.SWIFTITE_BLOCK.get());
+        dropSelf(ModBlocks.MORPHITE_BLOCK.get());
         dropSelf(ModBlocks.COBALT_FURNACE.get());
         dropSelf(ModBlocks.ADAMANTITE_FURNACE.get());
         dropSelf(ModBlocks.MORPHITE_SYNTHESIZER.get());

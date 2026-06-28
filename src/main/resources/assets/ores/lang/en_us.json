@@ -1,25 +1,46 @@
 {
   "itemGroup.ores.ores_tab": "Joe's Ores",
+
   "item.ores.raw_morphite": "Raw Morphite",
+  "item.ores.morphite_ingot": "Morphite Ingot",
+  "item.ores.morphite_nugget": "Morphite Nugget",
   "block.ores.morphite_ore": "Morphite Ore",
+  "block.ores.morphite_block": "Block of Morphite",
   "block.ores.deepslate_morphite_ore": "Deepslate Morphite Ore",
-  "block.ores.tectonic_ore": "Tectonic Ore",
-  "block.ores.deepslate_tectonic_ore": "Deepslate Tectonic Ore",
+
   "item.ores.ectoplasm": "Ectoplasm",
   "item.ores.necronium_ingot": "Necronium Ingot",
+  "item.ores.necronium_nugget": "Necronium Nugget",
+  "block.ores.necronium_block": "Block of Necronium",
+
   "item.ores.mush": "Mush",
   "item.ores.florite_ingot": "Florite Ingot",
+  "item.ores.florite_nugget": "Florite Nugget",
+  "block.ores.florite_block": "Block of Florite",
+
   "item.ores.petrified_bark": "Petrified Bark",
   "item.ores.petrafite_ingot": "Petrafite Ingot",
+  "item.ores.petrafite_nugget": "Petrafite Nugget",
+  "block.ores.petrafite_block": "Block of Petrafite",
+
+  "block.ores.tectonic_ore": "Tectonic Ore",
+  "block.ores.deepslate_tectonic_ore": "Deepslate Tectonic Ore",
   "item.ores.tectonic_shard": "Tectonic Shard",
   "item.ores.geovar_ingot": "Geovar Ingot",
+  "item.ores.geovar_nugget": "Geovar Nugget",
+  "block.ores.geovar_block": "Block of Geovar",
+
+  "item.ores.quicksilver": "Quicksilver",
+  "item.ores.swiftite_ingot": "Swiftite Ingot",
+  "item.ores.swiftite_nugget": "Swiftite Nugget",
+  "block.ores.swiftite_block": "Block of Swiftite",
+
   "item.ores.necronium_sword": "Necronium Sword",
   "item.ores.florite_hoe": "Florite Hoe",
   "item.ores.geovar_pickaxe": "Geovar Pickaxe",
   "item.ores.petrafite_axe": "Petrafite Axe",
-  "item.ores.quicksilver": "Quicksilver",
-  "item.ores.swiftite_ingot": "Swiftite Ingot",
   "item.ores.swiftite_shovel": "Swiftite Shovel",
+
   "block.ores.morphite_synthesizer": "Morphite Synthesizer",
   "blockentity.ores.morphite_synthesizer": "Morphite Synthesizer",
 
@@ -32,7 +53,6 @@
   "item.ores.copper_chestplate": "Copper Chestplate",
   "item.ores.copper_leggings": "Copper Leggings",
   "item.ores.copper_boots": "Copper Boots",
-
 
   "item.ores.cobalt_sword": "Cobalt Sword",
   "item.ores.cobalt_pickaxe": "Cobalt Pickaxe",
@@ -142,6 +162,9 @@
   "tag.ores.orichalcum_tools": "Orichalcum Tools",
   "tag.ores.adamantite_tools": "Adamantite Tools",
   "tag.ores.celestium_tools": "Celestium Tools",
+  "tag.ores.cobalt_tools": "Cobalt Tools",
+  "tag.ores.magnite_tools": "Magnite Tools",
+  "tag.ores.viridium_tools": "Viridium Tools",
 
   "item.ores.raw_cobalt": "Raw Cobalt",
   "item.ores.raw_magnite": "Raw Magnite",
@@ -152,13 +175,30 @@
   "item.ores.raw_celestium": "Raw Celestium",
 
   "item.ores.cobalt_ingot": "Cobalt Ingot",
+  "item.ores.cobalt_nugget": "Cobalt Nugget",
+  "block.ores.cobalt_block": "Block of Cobalt",
   "item.ores.magnite_ingot": "Magnite Ingot",
+  "item.ores.magnite_nugget": "Magnite Nugget",
+  "block.ores.magnite_block": "Block of Magnite",
   "item.ores.mythril_ingot": "Mythril Ingot",
+  "item.ores.mythril_nugget": "Mythril Nugget",
+  "block.ores.mythril_block": "Block of Mythril",
   "item.ores.orichalcum_ingot": "Orichalcum Ingot",
+  "item.ores.orichalcum_nugget": "Orichalcum Nugget",
+  "block.ores.orichalcum_block": "Block of Orichalcum",
   "item.ores.adamantite_ingot": "Adamantite Ingot",
+  "item.ores.adamantite_nugget": "Adamantite Nugget",
+  "block.ores.adamantite_block": "Block of Adamantite",
   "item.ores.viridium_ingot": "Viridium Ingot",
+  "item.ores.viridium_nugget": "Viridium Nugget",
+  "block.ores.viridium_block": "Block of Viridium",
   "item.ores.lunarium_ingot": "Lunarium Ingot",
+  "item.ores.lunarium_nugget": "Lunarium Nugget",
+  "block.ores.lunarium_block": "Block of Lunarium",
   "item.ores.solarium_ingot": "Solarium Ingot",
+  "item.ores.solarium_nugget": "Solarium Nugget",
+  "block.ores.solarium_block": "Block of Solarium",
+
   "container.joesores.adamantite_furnace": "Adamantite Furnace",
   "container.joesores.cobalt_furnace": "Cobalt Furnace",
 

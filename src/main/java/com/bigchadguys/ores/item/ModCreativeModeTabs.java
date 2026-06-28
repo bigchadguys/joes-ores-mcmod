@@ -127,7 +127,28 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.LUNARIUM_INGOT);
                         output.accept(ModItems.SOLARIUM_INGOT);
 
+                        output.accept(ModItems.COBALT_NUGGET);
+                        output.accept(ModItems.MAGNITE_NUGGET);
+                        output.accept(ModItems.MYTHRIL_NUGGET);
+                        output.accept(ModItems.ORICHALCUM_NUGGET);
+                        output.accept(ModItems.ADAMANTITE_NUGGET);
+                        output.accept(ModItems.VIRIDIUM_NUGGET);
+                        output.accept(ModItems.LUNARIUM_NUGGET);
+                        output.accept(ModItems.SOLARIUM_NUGGET);
+
+                        output.accept(ModBlocks.COBALT_BLOCK);
+                        output.accept(ModBlocks.MAGNITE_BLOCK);
+                        output.accept(ModBlocks.MYTHRIL_BLOCK);
+                        output.accept(ModBlocks.ORICHALCUM_BLOCK);
+                        output.accept(ModBlocks.ADAMANTITE_BLOCK);
+                        output.accept(ModBlocks.VIRIDIUM_BLOCK);
+                        output.accept(ModBlocks.LUNARIUM_BLOCK);
+                        output.accept(ModBlocks.SOLARIUM_BLOCK);
+
                         output.accept(ModItems.RAW_MORPHITE);
+                        output.accept(ModItems.MORPHITE_INGOT);
+                        output.accept(ModItems.MORPHITE_NUGGET);
+                        output.accept(ModBlocks.MORPHITE_BLOCK);
                         output.accept(ModItems.ECTOPLASM);
                         output.accept(ModItems.NECRONIUM_INGOT);
                         output.accept(ModItems.TECTONIC_SHARD);

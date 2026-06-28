@@ -50,6 +50,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockWithItem(ModBlocks.MORPHITE_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_MORPHITE_ORE);
+        blockWithItem(ModBlocks.MORPHITE_BLOCK);
 
         blockWithItem(ModBlocks.TECTONIC_ORE);
         blockWithItem(ModBlocks.DEEPSLATE_TECTONIC_ORE);
