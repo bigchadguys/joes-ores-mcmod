@@ -202,7 +202,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 ModBlocks.DEEPSLATE_CELESTIUM_ORE.get()
         );
 
-        tag(ModBlockTags.NEEDS_CELESTIUM_TIER_TOOL).add(
+        tag(ModBlockTags.NEEDS_CELESTIUM_TOOL).add(
                 ModBlocks.VIRIDIUM_ORE.get(),
                 ModBlocks.MORPHITE_ORE.get(),
                 ModBlocks.DEEPSLATE_MORPHITE_ORE.get(),

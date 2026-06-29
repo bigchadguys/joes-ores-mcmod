@@ -151,14 +151,24 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MORPHITE_BLOCK);
                         output.accept(ModItems.ECTOPLASM);
                         output.accept(ModItems.NECRONIUM_INGOT);
+                        output.accept(ModItems.NECRONIUM_NUGGET);
+                        output.accept(ModBlocks.NECRONIUM_BLOCK);
                         output.accept(ModItems.TECTONIC_SHARD);
                         output.accept(ModItems.GEOVAR_INGOT);
+                        output.accept(ModItems.GEOVAR_NUGGET);
+                        output.accept(ModBlocks.GEOVAR_BLOCK);
                         output.accept(ModItems.QUICKSILVER);
                         output.accept(ModItems.SWIFTITE_INGOT);
+                        output.accept(ModItems.SWIFTITE_NUGGET);
+                        output.accept(ModBlocks.SWIFTITE_BLOCK);
                         output.accept(ModItems.PETRIFIED_BARK);
                         output.accept(ModItems.PETRAFITE_INGOT);
+                        output.accept(ModItems.PETRAFITE_NUGGET);
+                        output.accept(ModBlocks.PETRAFITE_BLOCK);
                         output.accept(ModItems.MUSH);
                         output.accept(ModItems.FLORITE_INGOT);
+                        output.accept(ModItems.FLORITE_NUGGET);
+                        output.accept(ModBlocks.FLORITE_BLOCK);
 
                         output.accept(ModBlocks.COBALT_ORE);
                         output.accept(ModBlocks.MAGNITE_ORE);

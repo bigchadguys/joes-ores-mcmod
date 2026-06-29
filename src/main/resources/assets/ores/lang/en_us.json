@@ -202,5 +202,7 @@
   "container.joesores.adamantite_furnace": "Adamantite Furnace",
   "container.joesores.cobalt_furnace": "Cobalt Furnace",
 
-  "emi.category.ores.morphite_synthesizing": "Morphite Synthesizing"
+  "emi.category.ores.morphite_synthesizing": "Morphite Synthesizing",
+
+  "config.jade/plugin_ores.required_tool": "JOres Required Tool"
 }

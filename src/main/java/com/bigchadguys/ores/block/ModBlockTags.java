@@ -10,7 +10,7 @@ public final class ModBlockTags {
     public static final TagKey<Block> NEEDS_MYTHRIL_TOOL = create("needs_mythril_tool");
     public static final TagKey<Block> NEEDS_ORICHALCUM_TOOL = create("needs_orichalcum_tool");
     public static final TagKey<Block> NEEDS_ADAMANTITE_TOOL = create("needs_adamantite_tool");
-    public static final TagKey<Block> NEEDS_CELESTIUM_TIER_TOOL = create("needs_celestium_tier_tool");
+    public static final TagKey<Block> NEEDS_CELESTIUM_TOOL = create("needs_celestium_tool");
 
     public static final TagKey<Block> INCORRECT_FOR_MAGNITE_TOOL = create("incorrect_for_magnite_tool");
     public static final TagKey<Block> INCORRECT_FOR_COBALT_TOOL = create("incorrect_for_cobalt_tool");
