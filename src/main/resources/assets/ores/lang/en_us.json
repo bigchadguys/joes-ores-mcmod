@@ -204,5 +204,7 @@
 
   "emi.category.ores.morphite_synthesizing": "Morphite Synthesizing",
 
-  "config.jade/plugin_ores.required_tool": "JOres Required Tool"
+  "config.jade.plugin_ores.required_tool": "JOres Required Tool",
+  "config.jade.plugin_ores.required_tool_text": "JOres Required Tool Text",
+  "tooltip.ores.requires_tool": "Requires: "
 }

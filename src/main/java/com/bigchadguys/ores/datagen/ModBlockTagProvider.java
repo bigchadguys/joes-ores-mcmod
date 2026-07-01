@@ -187,10 +187,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 ModBlocks.MORPHITE_SYNTHESIZER.get()
         );
 
-        tag(ModBlockTags.NEEDS_MYTHRIL_TOOL).add(
-                ModBlocks.ORICHALCUM_ORE.get(),
-                ModBlocks.DEEPSLATE_ORICHALCUM_ORE.get()
-        );
+        // tag(ModBlockTags.NEEDS_MYTHRIL_TOOL).add(
+                // ModBlocks.ORICHALCUM_ORE.get(),
+                // ModBlocks.DEEPSLATE_ORICHALCUM_ORE.get()
+        // );
 
         tag(ModBlockTags.NEEDS_ORICHALCUM_TOOL).add(
                 ModBlocks.ADAMANTITE_ORE.get(),
