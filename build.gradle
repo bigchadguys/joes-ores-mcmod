@@ -47,6 +47,9 @@ dependencies {
     // -------- Jade --------
     compileOnly "maven.modrinth:jade:${jade_version}"
     localRuntime "maven.modrinth:jade:${jade_version}"
+
+    // -------- Fancy Tabs --------
+    jarJar(implementation "maven.modrinth:fancytabsections:${fancytabs_version}")
 }
 
 sourceSets {

@@ -22,7 +22,6 @@ import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 public class JoesOres {
     public static final String MOD_ID = "ores";
     public JoesOres(IEventBus modEventBus) {
-        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModArmorMaterials.register(modEventBus);
@@ -30,6 +29,7 @@ public class JoesOres {
         ModMenuTypes.register(modEventBus);
         ModRecipes.register(modEventBus);
         AddItemModifier.GLOBAL_LOOT_MODIFIER_SERIALIZERS.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
     }
 
     @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

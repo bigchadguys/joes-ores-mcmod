@@ -116,7 +116,9 @@ public class ModBlocks {
             new Block(baseMetalBlockProperties()));
 
     public static final DeferredBlock<Block> FLORITE_BLOCK = registerBlock("florite_block", () ->
-            new Block(baseMetalBlockProperties()));
+            new Block(baseMetalBlockProperties()
+                    .lightLevel(state -> 8)
+            ));
 
     public static final DeferredBlock<Block> GEOVAR_BLOCK = registerBlock("geovar_block", () ->
             new Block(baseMetalBlockProperties()));

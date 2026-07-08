@@ -206,5 +206,13 @@
 
   "config.jade.plugin_ores.required_tool": "JOres Required Tool",
   "config.jade.plugin_ores.required_tool_text": "JOres Required Tool Text",
-  "tooltip.ores.requires_tool": "Requires: "
+
+  "tooltip.ores.requires_tool": "Requires: ",
+
+  "creativetab.ores.ores_tab.armor": "Armor",
+  "creativetab.ores.ores_tab.functional_blocks": "Functional Blocks",
+  "creativetab.ores.ores_tab.ores": "Ores",
+  "creativetab.ores.ores_tab.raw_materials": "Raw Materials",
+  "creativetab.ores.ores_tab.ingots": "Ingots",
+  "creativetab.ores.ores_tab.tools_weapons": "Tools & Weapons"
 }
