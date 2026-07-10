@@ -50,6 +50,8 @@ dependencies {
 
     // -------- Fancy Tabs --------
     jarJar(implementation "maven.modrinth:fancytabsections:${fancytabs_version}")
+    //compileOnly "maven.modrinth:fancytabsections:${fancytabs_version}"
+    //localRuntime "maven.modrinth:fancytabsections:${fancytabs_version}"
 }
 
 sourceSets {
