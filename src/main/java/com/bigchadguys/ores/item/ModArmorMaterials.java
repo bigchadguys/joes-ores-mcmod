@@ -129,8 +129,8 @@ public class ModArmorMaterials {
                     0.2f
             ));
 
-    public static final Holder<ArmorMaterial> CELESTIUM =
-            ARMOR_MATERIALS.register("celestium", () -> new ArmorMaterial(
+    public static final Holder<ArmorMaterial> LUNARIUM =
+            ARMOR_MATERIALS.register("lunarium", () -> new ArmorMaterial(
                     Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
                         map.put(ArmorItem.Type.HELMET, 4);
                         map.put(ArmorItem.Type.CHESTPLATE, 10);
@@ -142,6 +142,24 @@ public class ModArmorMaterials {
                     () -> Ingredient.of(ModItemTags.CELESTIUM_INGOT),
                     List.of(new ArmorMaterial.Layer(
                             ResourceLocation.fromNamespaceAndPath(JoesOres.MOD_ID, "celestium")
+                    )),
+                    4.5f,
+                    0.25f
+            ));
+
+    public static final Holder<ArmorMaterial> SOLARIUM =
+            ARMOR_MATERIALS.register("solarium", () -> new ArmorMaterial(
+                    Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
+                        map.put(ArmorItem.Type.HELMET, 4);
+                        map.put(ArmorItem.Type.CHESTPLATE, 10);
+                        map.put(ArmorItem.Type.LEGGINGS, 8);
+                        map.put(ArmorItem.Type.BOOTS, 4);
+                    }),
+                    45,
+                    SoundEvents.ARMOR_EQUIP_NETHERITE,
+                    () -> Ingredient.of(ModItemTags.CELESTIUM_INGOT),
+                    List.of(new ArmorMaterial.Layer(
+                            ResourceLocation.fromNamespaceAndPath(JoesOres.MOD_ID, "solarium")
                     )),
                     4.5f,
                     0.25f

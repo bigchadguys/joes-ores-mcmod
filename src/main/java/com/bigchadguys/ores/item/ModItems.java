@@ -478,7 +478,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> LUNARIUM_HELMET = ITEMS.register("lunarium_helmet", () ->
             new LunariumArmorItem(
-                    ModArmorMaterials.CELESTIUM,
+                    ModArmorMaterials.LUNARIUM,
                     LunariumArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(37))
             )
@@ -486,7 +486,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> LUNARIUM_CHESTPLATE = ITEMS.register("lunarium_chestplate", () ->
             new LunariumArmorItem(
-                    ModArmorMaterials.CELESTIUM,
+                    ModArmorMaterials.LUNARIUM,
                     LunariumArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(37))
             )
@@ -494,7 +494,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> LUNARIUM_LEGGINGS = ITEMS.register("lunarium_leggings", () ->
             new LunariumArmorItem(
-                    ModArmorMaterials.CELESTIUM,
+                    ModArmorMaterials.LUNARIUM,
                     LunariumArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(37))
             )
@@ -502,7 +502,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> LUNARIUM_BOOTS = ITEMS.register("lunarium_boots", () ->
             new LunariumArmorItem(
-                    ModArmorMaterials.CELESTIUM,
+                    ModArmorMaterials.LUNARIUM,
                     LunariumArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(37))
             )
@@ -510,7 +510,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> SOLARIUM_HELMET = ITEMS.register("solarium_helmet", () ->
             new SolariumArmorItem(
-                    ModArmorMaterials.CELESTIUM,
+                    ModArmorMaterials.SOLARIUM,
                     SolariumArmorItem.Type.HELMET,
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(37))
             )
@@ -518,7 +518,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> SOLARIUM_CHESTPLATE = ITEMS.register("solarium_chestplate", () ->
             new SolariumArmorItem(
-                    ModArmorMaterials.CELESTIUM,
+                    ModArmorMaterials.SOLARIUM,
                     SolariumArmorItem.Type.CHESTPLATE,
                     new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(37))
             )
@@ -526,7 +526,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> SOLARIUM_LEGGINGS = ITEMS.register("solarium_leggings", () ->
             new SolariumArmorItem(
-                    ModArmorMaterials.CELESTIUM,
+                    ModArmorMaterials.SOLARIUM,
                     SolariumArmorItem.Type.LEGGINGS,
                     new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(37))
             )
@@ -534,7 +534,7 @@ public class ModItems {
 
     public static final DeferredItem<Item> SOLARIUM_BOOTS = ITEMS.register("solarium_boots", () ->
             new SolariumArmorItem(
-                    ModArmorMaterials.CELESTIUM,
+                    ModArmorMaterials.SOLARIUM,
                     SolariumArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(37))
             )
