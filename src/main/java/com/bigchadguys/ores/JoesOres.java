@@ -5,6 +5,9 @@ import com.bigchadguys.ores.block.entity.ModBlockEntities;
 import com.bigchadguys.ores.item.ModArmorMaterials;
 import com.bigchadguys.ores.item.ModCreativeModeTabs;
 import com.bigchadguys.ores.item.ModItems;
+import com.bigchadguys.ores.item.armor.client.ArmorClientExtension;
+import com.bigchadguys.ores.item.armor.client.model.SolariumArmorModel;
+import com.bigchadguys.ores.item.armor.client.provider.SimpleModelProvider;
 import com.bigchadguys.ores.loot.AddItemModifier;
 import com.bigchadguys.ores.recipe.ModRecipes;
 import com.bigchadguys.ores.screen.ModMenuTypes;
@@ -17,6 +20,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 
 @Mod(JoesOres.MOD_ID)
 public class JoesOres {
@@ -39,7 +43,28 @@ public class JoesOres {
             event.register(ModMenuTypes.MORPHITE_SYNTHESIZER_MENU.get(), MorphiteSynthesizerScreen::new);
             event.register(ModMenuTypes.COBALT_FURNACE_MENU.get(), CobaltFurnaceScreen::new);
             event.register(ModMenuTypes.ADAMANTITE_FURNACE_MENU.get(), AdamantiteFurnaceScreen::new);
+        }
 
+        @SubscribeEvent
+        public static void registerClientExtensions(
+                RegisterClientExtensionsEvent event
+        ) {
+            SimpleModelProvider solariumModelProvider =
+                    new SimpleModelProvider(
+                            SolariumArmorModel::createBodyLayer,
+                            SolariumArmorModel::new
+                    );
+
+            ArmorClientExtension solariumExtension =
+                    new ArmorClientExtension(solariumModelProvider);
+
+            event.registerItem(
+                    solariumExtension,
+                    ModItems.SOLARIUM_HELMET.get(),
+                    ModItems.SOLARIUM_CHESTPLATE.get(),
+                    ModItems.SOLARIUM_LEGGINGS.get(),
+                    ModItems.SOLARIUM_BOOTS.get()
+            );
         }
     }
 }
