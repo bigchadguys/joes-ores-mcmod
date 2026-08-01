@@ -3,6 +3,7 @@ package com.bigchadguys.ores.item.custom;
 import com.bigchadguys.ores.JoesOres;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
@@ -13,6 +14,7 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class SolariumArmorItem extends ArmorItem {
     private static final ResourceLocation BONUS_HEALTH_ID = ResourceLocation.fromNamespaceAndPath(JoesOres.MOD_ID, "solarium_set_bonus_health");
@@ -29,6 +31,23 @@ public class SolariumArmorItem extends ArmorItem {
 
     public SolariumArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
         super(material, type, properties);
+    }
+
+    private static final ResourceLocation ARMOR_TEXTURE =
+            ResourceLocation.fromNamespaceAndPath(
+                    JoesOres.MOD_ID,
+                    "textures/models/armor/custom/solarium.png"
+            );
+
+    @Override
+    public @Nullable ResourceLocation getArmorTexture(
+            ItemStack stack,
+            Entity entity,
+            EquipmentSlot slot,
+            ArmorMaterial.Layer layer,
+            boolean inner
+    ) {
+        return ARMOR_TEXTURE;
     }
 
     @Override
