@@ -17,7 +17,7 @@ public class SolariumArmorModel extends ArmorModel {
 	 * The source texture is 96x80, but the model was originally authored
 	 * against an effective UV canvas of 64x53.3333.
 	 *
-	 * Will edit model files later to better fit 96 x 60
+	 * Will edit model files later to better fit 96 x 80
 	 *
 	 * 96 * 2/3 = 64
 	 * 80 * 2/3 = 53.3333
@@ -40,21 +40,21 @@ public class SolariumArmorModel extends ArmorModel {
 				CubeListBuilder.create()
 						.texOffs(0, 0)
 						.addBox(
-								-4.0F, -7.0F, -4.0F,
+								-4.0F, -8.5F, -4.0F,
 								8.0F, 8.0F, 8.0F,
 								new CubeDeformation(0.75F),
 								UV_SCALE, UV_SCALE
 						)
 						.texOffs(32, 0)
 						.addBox(
-								-4.0F, -7.0F, -4.0F,
+								-4.0F, -8.5F, -4.0F,
 								8.0F, 8.0F, 8.0F,
 								new CubeDeformation(1.0F),
 								UV_SCALE, UV_SCALE
 						)
 						.texOffs(0, 32)
 						.addBox(
-								-4.0F, -8.0F, -2.0F,
+								-4.0F, -9.5F, -2.0F,
 								8.0F, 8.0F, 8.0F,
 								new CubeDeformation(1.25F),
 								UV_SCALE, UV_SCALE
@@ -65,7 +65,7 @@ public class SolariumArmorModel extends ArmorModel {
 		PartDefinition hat = root.addOrReplaceChild(
 				"hat",
 				CubeListBuilder.create(),
-				PartPose.offset(0.0F, 0.0F, 0.0F)
+				PartPose.offset(0.0F, 24.0F, 0.0F)
 		);
 
 		PartDefinition body = root.addOrReplaceChild(

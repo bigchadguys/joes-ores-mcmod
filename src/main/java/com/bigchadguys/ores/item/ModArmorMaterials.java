@@ -141,7 +141,7 @@ public class ModArmorMaterials {
                     SoundEvents.ARMOR_EQUIP_NETHERITE,
                     () -> Ingredient.of(ModItemTags.CELESTIUM_INGOT),
                     List.of(new ArmorMaterial.Layer(
-                            ResourceLocation.fromNamespaceAndPath(JoesOres.MOD_ID, "celestium")
+                            ResourceLocation.fromNamespaceAndPath(JoesOres.MOD_ID, "lunarium")
                     )),
                     4.5f,
                     0.25f

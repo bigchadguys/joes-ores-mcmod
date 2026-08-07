@@ -3,6 +3,7 @@ package com.bigchadguys.ores.item.custom;
 import com.bigchadguys.ores.JoesOres;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ArmorItem;
@@ -14,6 +15,7 @@ import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class LunariumArmorItem extends ArmorItem {
     private static final ResourceLocation BONUS_HEALTH_ID = ResourceLocation.fromNamespaceAndPath(JoesOres.MOD_ID, "lunarium_set_bonus_health");
@@ -28,8 +30,30 @@ public class LunariumArmorItem extends ArmorItem {
     private static final AttributeModifier LUNARIUM_SAFE_FALL_DISTANCE_MODIFIER = new AttributeModifier(BONUS_SAFE_FALL_DISTANCE_ID, 3, AttributeModifier.Operation.ADD_VALUE);
     private static final AttributeModifier LUNARIUM_BLOCK_BREAK_SPEED_MODIFIER = new AttributeModifier(BONUS_BLOCK_BREAK_SPEED_ID, 0.5, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
 
+    private static final ResourceLocation LAYER_1 =
+            ResourceLocation.fromNamespaceAndPath(
+                    JoesOres.MOD_ID,
+                    "textures/models/armor/custom/lunarium_layer_1.png"
+            );
+    private static final ResourceLocation LAYER_2 =
+            ResourceLocation.fromNamespaceAndPath(
+                    JoesOres.MOD_ID,
+                    "textures/models/armor/custom/lunarium_layer_2.png"
+            );
+
     public LunariumArmorItem(Holder<ArmorMaterial> material, ArmorItem.Type type, Item.Properties properties) {
         super(material, type, properties);
+    }
+
+    @Override
+    public @Nullable ResourceLocation getArmorTexture(
+            ItemStack stack,
+            Entity entity,
+            EquipmentSlot slot,
+            ArmorMaterial.Layer layer,
+            boolean inner
+    ) {
+        return inner ? LAYER_2 : LAYER_1;
     }
 
     @Override
