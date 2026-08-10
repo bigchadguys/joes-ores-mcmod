@@ -51,8 +51,8 @@ public class JoesOres {
         ) {
             SimpleModelProvider solariumModelProvider =
                     new SimpleModelProvider(
-                            SolariumArmorModel::createBodyLayer,
-                            SolariumArmorModel::new
+                            SolariumArmorOuterModel::createBodyLayer,
+                            SolariumArmorOuterModel::new
                     );
             ArmorClientExtension solariumExtension =
                     new ArmorClientExtension(solariumModelProvider);
@@ -61,8 +61,20 @@ public class JoesOres {
                     solariumExtension,
                     ModItems.SOLARIUM_HELMET.get(),
                     ModItems.SOLARIUM_CHESTPLATE.get(),
-                    ModItems.SOLARIUM_LEGGINGS.get(),
                     ModItems.SOLARIUM_BOOTS.get()
+            );
+
+            SimpleModelProvider solariumLeggingsProvider =
+                    new SimpleModelProvider(
+                            SolariumArmorLeggingsModel::createBodyLayer,
+                            SolariumArmorLeggingsModel::new
+                    );
+            ArmorClientExtension solariumLeggingsExtension =
+                    new ArmorClientExtension(solariumLeggingsProvider);
+
+            event.registerItem(
+                    solariumLeggingsExtension,
+                    ModItems.SOLARIUM_LEGGINGS.get()
             );
 
             SimpleModelProvider lunariumOuterProvider =

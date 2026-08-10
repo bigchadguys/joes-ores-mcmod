@@ -11,7 +11,7 @@ import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.model.geom.builders.MeshDefinition;
 import net.minecraft.client.model.geom.builders.PartDefinition;
 
-public class SolariumArmorModel extends ArmorModel {
+public class SolariumArmorOuterModel extends ArmorModel {
 
 	/*
 	 * The source texture is 96x80, but the model was originally authored
@@ -27,7 +27,7 @@ public class SolariumArmorModel extends ArmorModel {
 	private static final int TEXTURE_WIDTH = 96;
 	private static final int TEXTURE_HEIGHT = 80;
 
-	public SolariumArmorModel(ModelPart root) {
+	public SolariumArmorOuterModel(ModelPart root) {
 		super(root);
 	}
 

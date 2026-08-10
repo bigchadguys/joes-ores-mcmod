@@ -38,12 +38,12 @@ public class SolariumArmorItem extends ArmorItem {
                     JoesOres.MOD_ID,
                     "textures/models/armor/custom/solarium_layer_1.png"
             );
-    // Prepping for Layer 2 of armor texture
-    /* private static final ResourceLocation LAYER_2 =
+
+    private static final ResourceLocation LAYER_2 =
          ResourceLocation.fromNamespaceAndPath(
                     JoesOres.MOD_ID,
                     "textures/models/armor/custom/solarium_layer_2.png"
-    ); */
+    );
 
     @Override
     public @Nullable ResourceLocation getArmorTexture(
@@ -53,7 +53,7 @@ public class SolariumArmorItem extends ArmorItem {
             ArmorMaterial.Layer layer,
             boolean inner
     ) {
-        return inner ? LAYER_1 : null;
+        return inner ? LAYER_2 : LAYER_1 ;
     }
 
     @Override
