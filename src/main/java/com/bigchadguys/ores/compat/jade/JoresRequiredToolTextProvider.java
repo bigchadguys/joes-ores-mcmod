@@ -1,6 +1,5 @@
 package com.bigchadguys.ores.compat.jade;
 
-import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
 import net.minecraft.network.chat.TextColor;

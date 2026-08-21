@@ -10,9 +10,5 @@ authors="${mod_authors}"
 description='''${mod_description}'''
 logoFile="assets/ores/icon_256.png"
 
-[[dependencies.ores]]
-modId="emi"
-mandatory=false
-versionRange="[1.1.0,)"
-ordering="AFTER"
-side="CLIENT"
+#[[dependencies.ores]]
+

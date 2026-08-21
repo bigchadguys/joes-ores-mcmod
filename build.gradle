@@ -41,8 +41,9 @@ dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
 
     // -------- EMI --------
-    compileOnly "dev.emi:emi-neoforge:${emi_version}:api"
-    runtimeOnly "dev.emi:emi-neoforge:${emi_version}"
+    // compileOnly "dev.emi:emi-neoforge:${emi_version}:api"
+    // localRuntime "dev.emi:emi-neoforge:${emi_version}"
+    // runtimeOnly "dev.emi:emi-neoforge:${emi_version}"
 
     // -------- Jade --------
     compileOnly "maven.modrinth:jade:${jade_version}"

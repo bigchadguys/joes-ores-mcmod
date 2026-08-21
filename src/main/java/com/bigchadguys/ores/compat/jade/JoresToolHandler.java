@@ -1,10 +1,7 @@
 package com.bigchadguys.ores.compat.jade;
 
-import com.bigchadguys.ores.block.ModBlockTags;
-import com.bigchadguys.ores.item.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
