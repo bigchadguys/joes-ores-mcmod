@@ -181,14 +181,18 @@ public class ModItems {
     public static final DeferredItem<Item> COBALT_SHOVEL = ITEMS.register("cobalt_shovel", () ->
             new ShovelItem(
                     ModTiers.COBALT,
-                    new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.COBALT, 1.5f, -3.0f))
+                    new Item.Properties().attributes(
+                            ShovelItem.createAttributes(
+                                    ModTiers.COBALT, 1.5f, -3.0f))
             )
     );
 
     public static final DeferredItem<Item> COBALT_HOE = ITEMS.register("cobalt_hoe", () ->
             new HoeItem(
                     ModTiers.COBALT,
-                    new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.COBALT, -2.0f, -1.0f))
+                    new Item.Properties().attributes(
+                            HoeItem.createAttributes(
+                                    ModTiers.COBALT, -2.0f, -1.0f))
             )
     );
 

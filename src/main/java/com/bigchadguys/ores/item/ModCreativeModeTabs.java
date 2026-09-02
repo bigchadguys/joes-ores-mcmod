@@ -163,6 +163,10 @@ public class ModCreativeModeTabs {
         FancyTabSections.addSection(id("ores_tab"),
                 section("ingots", "creativetab.ores.ores_tab.ingots")
 
+                        .add(ModItems.COBALT_NUGGET)
+                        .add(ModItems.MAGNITE_NUGGET)
+                        .add(ModItems.MYTHRIL_NUGGET)
+                        .add(ModItems.ORICHALCUM_NUGGET)
                         .add(ModItems.ADAMANTITE_NUGGET)
                         .add(ModItems.VIRIDIUM_NUGGET)
                         .add(ModItems.LUNARIUM_NUGGET)
