@@ -32,57 +32,56 @@ public class ModPlacedFeatures {
         register(context, COBALT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_COBALT_KEY),
                 ModOrePlacements.commonOrePlacement(6,
                         HeightRangePlacement.uniform(
-                        VerticalAnchor.absolute(20),
-                        VerticalAnchor.absolute(100))));
+                                VerticalAnchor.absolute(50),
+                                VerticalAnchor.absolute(300))));
 
         register(context, MAGNITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MAGNITE_KEY),
                 ModOrePlacements.commonOrePlacement(5,
                         HeightRangePlacement.uniform(
-                        VerticalAnchor.absolute(-10),
-                        VerticalAnchor.absolute(50))));
+                                VerticalAnchor.absolute(40),
+                                VerticalAnchor.absolute(200))));
 
         register(context, MYTHRIL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MYTHRIL_KEY),
                 ModOrePlacements.commonOrePlacement(4,
                         HeightRangePlacement.uniform(
-                        VerticalAnchor.absolute(-40),
-                        VerticalAnchor.absolute(10))));
+                                VerticalAnchor.absolute(-20),
+                                VerticalAnchor.absolute(35))));
 
         register(context, ORICHALCUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ORICHALCUM_KEY),
                 ModOrePlacements.commonOrePlacement(3,
                         HeightRangePlacement.uniform(
-                        VerticalAnchor.absolute(-60),
-                        VerticalAnchor.absolute(-5))));
+                                VerticalAnchor.absolute(-45),
+                                VerticalAnchor.absolute(10))));
 
         register(context, ADAMANTITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_ADAMANTITE_KEY),
                 ModOrePlacements.commonOrePlacement(3,
                         HeightRangePlacement.uniform(
-                        VerticalAnchor.absolute(-60),
-                        VerticalAnchor.absolute(-8))));
+                                VerticalAnchor.absolute(-60),
+                                VerticalAnchor.absolute(-8))));
 
         register(context, CELESTIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CELESTIUM_KEY),
                 ModOrePlacements.commonOrePlacement(3,
                         HeightRangePlacement.uniform(
-                        VerticalAnchor.absolute(-60),
-                        VerticalAnchor.absolute(-28))));
+                                VerticalAnchor.absolute(110),
+                                VerticalAnchor.absolute(333))));
 
         register(context, MORPHITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_MORPHITE_KEY),
                 ModOrePlacements.commonOrePlacement(3,
                         HeightRangePlacement.uniform(
-                        VerticalAnchor.absolute(-60),
-                        VerticalAnchor.absolute(0))));
+                                VerticalAnchor.absolute(-60),
+                                VerticalAnchor.absolute(40))));
 
         register(context, TECTONIC_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TECTONIC_KEY),
                 ModOrePlacements.commonOrePlacement(3,
                         HeightRangePlacement.uniform(
-                        VerticalAnchor.absolute(-60),
-                        VerticalAnchor.absolute(-36))));
+                                VerticalAnchor.absolute(-80),
+                                VerticalAnchor.absolute(-36))));
 
         register(context, VIRIDIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_VIRIDIUM_KEY),
-                ModOrePlacements.commonOrePlacement(6,
+                ModOrePlacements.commonOrePlacement(5,
                         HeightRangePlacement.uniform(
                                 VerticalAnchor.absolute(5),
-                                VerticalAnchor.absolute(60)
-                        )));
+                                VerticalAnchor.absolute(60))));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {
