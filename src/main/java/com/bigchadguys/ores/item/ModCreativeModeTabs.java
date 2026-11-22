@@ -265,5 +265,4 @@ public class ModCreativeModeTabs {
                         .add(ModItems.FLORITE_HOE)
         );
     }
-
 }

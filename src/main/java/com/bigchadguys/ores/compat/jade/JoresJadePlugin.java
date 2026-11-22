@@ -20,7 +20,6 @@ public class JoresJadePlugin implements IWailaPlugin {
     public void registerClient(IWailaClientRegistration registration) {
         HarvestToolProvider.registerHandler(JoresToolHandler.INSTANCE);
 
-        registration.addConfig(JORES_REQUIRED_TOOL_TEXT, true);
         registration.registerBlockComponent(JoresRequiredToolTextProvider.INSTANCE, Block.class);
     }
 }
