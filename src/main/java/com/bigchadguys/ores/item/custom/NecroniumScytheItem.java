@@ -37,5 +37,4 @@ public class NecroniumScytheItem extends SwordItem {
                 && player.getVehicle() == null
                 && player.getAttackStrengthScale(0.5f) == 1.0f;
     }
-
 }

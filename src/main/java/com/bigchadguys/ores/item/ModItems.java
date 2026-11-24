@@ -1,10 +1,7 @@
 package com.bigchadguys.ores.item;
 
 import com.bigchadguys.ores.JoesOres;
-import com.bigchadguys.ores.item.custom.FloriteHoeItem;
-import com.bigchadguys.ores.item.custom.LunariumArmorItem;
-import com.bigchadguys.ores.item.custom.NecroniumScytheItem;
-import com.bigchadguys.ores.item.custom.SolariumArmorItem;
+import com.bigchadguys.ores.item.custom.*;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -650,19 +647,33 @@ public class ModItems {
             )
     );
 
-    public static final DeferredItem<Item> GEOVAR_PICKAXE = ITEMS.register("geovar_pickaxe", () ->
-            new PickaxeItem(
-                    ModTiers.GEOVAR,
-                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.GEOVAR, 1.0f, -2.8f))
-            )
-    );
+    public static final DeferredItem<Item> GEOVAR_PICKAXE =
+            ITEMS.register("geovar_pickaxe", () ->
+                    new GeovarPickaxeItem(
+                            ModTiers.GEOVAR,
+                            new Item.Properties().attributes(
+                                    PickaxeItem.createAttributes(
+                                            ModTiers.GEOVAR,
+                                            1.0f,
+                                            -2.8f
+                                    )
+                            )
+                    )
+            );
 
-    public static final DeferredItem<Item> PETRAFITE_AXE = ITEMS.register("petrafite_axe", () ->
-            new AxeItem(
-                    ModTiers.PETRAFITE,
-                    new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.PETRAFITE, 5.0f, -3.0f))
-            )
-    );
+    public static final DeferredItem<Item> PETRAFITE_AXE =
+            ITEMS.register("petrafite_axe", () ->
+                    new PetrafiteAxeItem(
+                            ModTiers.PETRAFITE,
+                            new Item.Properties().attributes(
+                                    AxeItem.createAttributes(
+                                            ModTiers.PETRAFITE,
+                                            5.0f,
+                                            -3.0f
+                                    )
+                            )
+                    )
+            );
 
     public static final DeferredItem<Item> SWIFTITE_SHOVEL = ITEMS.register("swiftite_shovel", () ->
             new ShovelItem(

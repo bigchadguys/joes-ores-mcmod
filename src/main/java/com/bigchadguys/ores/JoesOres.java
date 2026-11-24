@@ -2,6 +2,7 @@ package com.bigchadguys.ores;
 
 import com.bigchadguys.ores.block.ModBlocks;
 import com.bigchadguys.ores.block.entity.ModBlockEntities;
+import com.bigchadguys.ores.config.MorphiteConfig;
 import com.bigchadguys.ores.item.ModArmorMaterials;
 import com.bigchadguys.ores.item.ModCreativeModeTabs;
 import com.bigchadguys.ores.item.ModItems;
@@ -17,15 +18,22 @@ import com.bigchadguys.ores.screen.custom.MorphiteSynthesizerScreen;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 
 @Mod(JoesOres.MOD_ID)
 public class JoesOres {
     public static final String MOD_ID = "ores";
-    public JoesOres(IEventBus modEventBus) {
+    public JoesOres(IEventBus modEventBus, ModContainer container) {
+        container.registerConfig(
+                ModConfig.Type.SERVER,
+                MorphiteConfig.SPEC,
+                "ores-morphite-server.toml"
+        );
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModArmorMaterials.register(modEventBus);
