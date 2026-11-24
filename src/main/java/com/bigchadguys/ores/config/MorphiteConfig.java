@@ -23,7 +23,7 @@ public final class MorphiteConfig {
                 )
                 .defineInRange(
                         "petrafite_durability_saving_chance",
-                        0.25,
+                        0.33,
                         0.0,
                         1.0
                 );
@@ -36,7 +36,7 @@ public final class MorphiteConfig {
                 )
                 .defineInRange(
                         "geovar_durability_saving_chance",
-                        0.25,
+                        0.33,
                         0.0,
                         1.0
                 );
@@ -58,12 +58,12 @@ public final class MorphiteConfig {
         SWIFTITE_SPEED = builder
                 .comment(
                         "Main-hand movement speed bonus.",
-                        "0.10 means +10%.",
+                        "0.15 means +15%.",
                         "Re-equip the shovel after changing this value."
                 )
                 .defineInRange(
                         "swiftite_speed_bonus",
-                        0.10,
+                        0.15,
                         0.0,
                         1.0
                 );

@@ -54,7 +54,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 crop + "_drops_mush",
                 new AddItemModifier(new LootItemCondition[] {
                         LootTableIdCondition.builder(ResourceLocation.parse("blocks/" + crop)).build(),
-                        LootItemRandomChanceCondition.randomChance(0.0005f).build()
+                        LootItemRandomChanceCondition.randomChance(0.005f).build()
                 }, ModItems.MUSH.get())
         ));
 
@@ -62,7 +62,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 block + "_drops_quicksilver",
                 new AddItemModifier(new LootItemCondition[] {
                         LootTableIdCondition.builder(ResourceLocation.parse("blocks/" + block)).build(),
-                        LootItemRandomChanceCondition.randomChance(0.0001f).build()
+                        LootItemRandomChanceCondition.randomChance(0.001f).build()
                 }, ModItems.QUICKSILVER.get())
         ));
 
@@ -70,7 +70,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 entity + "_drops_ectoplasm",
                 new AddItemModifier(new LootItemCondition[] {
                         LootTableIdCondition.builder(ResourceLocation.parse("entities/" + entity)).build(),
-                        LootItemRandomChanceCondition.randomChance(0.0004f).build()
+                        LootItemRandomChanceCondition.randomChance(0.004f).build()
                 }, ModItems.ECTOPLASM.get())
         ));
     }
