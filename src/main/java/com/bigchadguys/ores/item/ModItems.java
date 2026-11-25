@@ -79,77 +79,6 @@ public class ModItems {
             )
     );
 
-    public static final DeferredItem<Item> RAW_MAGNITE = ITEMS.registerSimpleItem("raw_magnite");
-    public static final DeferredItem<Item> MAGNITE_INGOT = ITEMS.registerSimpleItem("magnite_ingot");
-    public static final DeferredItem<Item> MAGNITE_NUGGET = ITEMS.registerSimpleItem("magnite_nugget");
-
-    public static final DeferredItem<Item> MAGNITE_SWORD = ITEMS.register("magnite_sword", () ->
-            new SwordItem(
-                    ModTiers.MAGNITE,
-                    new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.MAGNITE, 3.0f, -2.4f))
-            )
-    );
-
-    public static final DeferredItem<Item> MAGNITE_PICKAXE = ITEMS.register("magnite_pickaxe", () ->
-            new PickaxeItem(
-                    ModTiers.MAGNITE,
-                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.MAGNITE, 1.0f, -2.8f))
-            )
-    );
-
-    public static final DeferredItem<Item> MAGNITE_AXE = ITEMS.register("magnite_axe", () ->
-            new AxeItem(
-                    ModTiers.MAGNITE,
-                    new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.MAGNITE, 6.0f, -3.1f))
-            )
-    );
-
-    public static final DeferredItem<Item> MAGNITE_SHOVEL = ITEMS.register("magnite_shovel", () ->
-            new ShovelItem(
-                    ModTiers.MAGNITE,
-                    new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.MAGNITE, 1.5f, -3.0f))
-            )
-    );
-
-    public static final DeferredItem<Item> MAGNITE_HOE = ITEMS.register("magnite_hoe", () ->
-            new HoeItem(
-                    ModTiers.MAGNITE,
-                    new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.MAGNITE, -2.0f, -1.0f))
-            )
-    );
-
-    public static final DeferredItem<Item> MAGNITE_HELMET = ITEMS.register("magnite_helmet", () ->
-            new ArmorItem(
-                    ModArmorMaterials.MAGNITE,
-                    ArmorItem.Type.HELMET,
-                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(25))
-            )
-    );
-
-    public static final DeferredItem<Item> MAGNITE_CHESTPLATE = ITEMS.register("magnite_chestplate", () ->
-            new ArmorItem(
-                    ModArmorMaterials.MAGNITE,
-                    ArmorItem.Type.CHESTPLATE,
-                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(25))
-            )
-    );
-
-    public static final DeferredItem<Item> MAGNITE_LEGGINGS = ITEMS.register("magnite_leggings", () ->
-            new ArmorItem(
-                    ModArmorMaterials.MAGNITE,
-                    ArmorItem.Type.LEGGINGS,
-                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(25))
-            )
-    );
-
-    public static final DeferredItem<Item> MAGNITE_BOOTS = ITEMS.register("magnite_boots", () ->
-            new ArmorItem(
-                    ModArmorMaterials.MAGNITE,
-                    ArmorItem.Type.BOOTS,
-                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(25))
-            )
-    );
-
     public static final DeferredItem<Item> RAW_COBALT = ITEMS.registerSimpleItem("raw_cobalt");
     public static final DeferredItem<Item> COBALT_INGOT = ITEMS.registerSimpleItem("cobalt_ingot");
     public static final DeferredItem<Item> COBALT_NUGGET = ITEMS.registerSimpleItem("cobalt_nugget");
@@ -222,6 +151,77 @@ public class ModItems {
                     ModArmorMaterials.COBALT,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(18))
+            )
+    );
+
+    public static final DeferredItem<Item> RAW_MAGNITE = ITEMS.registerSimpleItem("raw_magnite");
+    public static final DeferredItem<Item> MAGNITE_INGOT = ITEMS.registerSimpleItem("magnite_ingot");
+    public static final DeferredItem<Item> MAGNITE_NUGGET = ITEMS.registerSimpleItem("magnite_nugget");
+
+    public static final DeferredItem<Item> MAGNITE_SWORD = ITEMS.register("magnite_sword", () ->
+            new SwordItem(
+                    ModTiers.MAGNITE,
+                    new Item.Properties().attributes(SwordItem.createAttributes(ModTiers.MAGNITE, 3.0f, -2.4f))
+            )
+    );
+
+    public static final DeferredItem<Item> MAGNITE_PICKAXE = ITEMS.register("magnite_pickaxe", () ->
+            new PickaxeItem(
+                    ModTiers.MAGNITE,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.MAGNITE, 1.0f, -2.8f))
+            )
+    );
+
+    public static final DeferredItem<Item> MAGNITE_AXE = ITEMS.register("magnite_axe", () ->
+            new AxeItem(
+                    ModTiers.MAGNITE,
+                    new Item.Properties().attributes(AxeItem.createAttributes(ModTiers.MAGNITE, 6.0f, -3.1f))
+            )
+    );
+
+    public static final DeferredItem<Item> MAGNITE_SHOVEL = ITEMS.register("magnite_shovel", () ->
+            new ShovelItem(
+                    ModTiers.MAGNITE,
+                    new Item.Properties().attributes(ShovelItem.createAttributes(ModTiers.MAGNITE, 1.5f, -3.0f))
+            )
+    );
+
+    public static final DeferredItem<Item> MAGNITE_HOE = ITEMS.register("magnite_hoe", () ->
+            new HoeItem(
+                    ModTiers.MAGNITE,
+                    new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.MAGNITE, -2.0f, -1.0f))
+            )
+    );
+
+    public static final DeferredItem<Item> MAGNITE_HELMET = ITEMS.register("magnite_helmet", () ->
+            new ArmorItem(
+                    ModArmorMaterials.MAGNITE,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(25))
+            )
+    );
+
+    public static final DeferredItem<Item> MAGNITE_CHESTPLATE = ITEMS.register("magnite_chestplate", () ->
+            new ArmorItem(
+                    ModArmorMaterials.MAGNITE,
+                    ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(25))
+            )
+    );
+
+    public static final DeferredItem<Item> MAGNITE_LEGGINGS = ITEMS.register("magnite_leggings", () ->
+            new ArmorItem(
+                    ModArmorMaterials.MAGNITE,
+                    ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(25))
+            )
+    );
+
+    public static final DeferredItem<Item> MAGNITE_BOOTS = ITEMS.register("magnite_boots", () ->
+            new ArmorItem(
+                    ModArmorMaterials.MAGNITE,
+                    ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(25))
             )
     );
 
@@ -476,6 +476,13 @@ public class ModItems {
             new HoeItem(
                     ModTiers.CELESTIUM,
                     new Item.Properties().attributes(HoeItem.createAttributes(ModTiers.CELESTIUM, -4.0f, 0.0f))
+            )
+    );
+
+    public static final DeferredItem<Item> CELESTIUM_HAMMER = ITEMS.register("celestium_hammer", () ->
+            new HammerItem(
+                    ModTiers.CELESTIUM,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.CELESTIUM, 8.0f, -3.0f))
             )
     );
 
