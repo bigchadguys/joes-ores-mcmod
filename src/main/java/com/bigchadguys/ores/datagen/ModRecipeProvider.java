@@ -529,6 +529,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_raw_magnite", has(ModItems.RAW_MAGNITE))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MYTHRIL_HAMMER.get())
+                .pattern("CSC")
+                .pattern("CSC")
+                .pattern(" S ")
+                .define('C', ModItems.MYTHRIL_INGOT)
+                .define('S', Items.STICK)
+                .unlockedBy("has_raw_mythril", has(ModItems.RAW_MYTHRIL))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.NECRONIUM_SWORD.get())
                 .pattern(" C ")
                 .pattern(" C ")

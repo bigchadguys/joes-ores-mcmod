@@ -265,6 +265,7 @@ public class ModCreativeModeTabs {
                         .add(ModItems.FLORITE_HOE)
 
                         .add(ModItems.MAGNITE_HAMMER)
+                        .add(ModItems.MYTHRIL_HAMMER)
                         .add(ModItems.CELESTIUM_HAMMER)
         );
     }

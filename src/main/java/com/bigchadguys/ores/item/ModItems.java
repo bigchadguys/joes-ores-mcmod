@@ -271,6 +271,13 @@ public class ModItems {
             )
     );
 
+    public static final DeferredItem<Item> MYTHRIL_HAMMER = ITEMS.register("mythril_hammer", () ->
+            new HammerItem(
+                    ModTiers.MYTHRIL,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.MYTHRIL, 5.5f, -3.0f))
+            )
+    );
+
     public static final DeferredItem<Item> MYTHRIL_HELMET = ITEMS.register("mythril_helmet", () ->
             new ArmorItem(
                     ModArmorMaterials.MYTHRIL,
