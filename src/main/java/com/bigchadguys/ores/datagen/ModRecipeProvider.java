@@ -162,6 +162,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', Items.STICK)
                 .unlockedBy("has_" + unlockName, has(ingot))
                 .save(recipeOutput);
+
     }
 
     protected static void registerStandardArmor(
@@ -519,6 +520,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ResourceLocation.fromNamespaceAndPath(JoesOres.MOD_ID, "celestium_ingot")
         );
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MAGNITE_HAMMER.get())
+                .pattern("CSC")
+                .pattern("CSC")
+                .pattern(" S ")
+                .define('C', ModItems.MAGNITE_INGOT)
+                .define('S', Items.STICK)
+                .unlockedBy("has_raw_magnite", has(ModItems.RAW_MAGNITE))
+                .save(recipeOutput);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.NECRONIUM_SWORD.get())
                 .pattern(" C ")
                 .pattern(" C ")
@@ -603,6 +613,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIUM_HOE.get())
                 .pattern("CC ")
                 .pattern(" S ")
+                .pattern(" S ")
+                .define('C', CELESTIUM_TAG)
+                .define('S', Items.STICK)
+                .unlockedBy("has_celestium_ingot", has(CELESTIUM_TAG))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.CELESTIUM_HAMMER.get())
+                .pattern("CSC")
+                .pattern("CSC")
                 .pattern(" S ")
                 .define('C', CELESTIUM_TAG)
                 .define('S', Items.STICK)

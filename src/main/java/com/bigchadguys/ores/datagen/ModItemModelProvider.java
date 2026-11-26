@@ -69,6 +69,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.MAGNITE_AXE.get());
         handheldItem(ModItems.MAGNITE_SHOVEL.get());
         handheldItem(ModItems.MAGNITE_HOE.get());
+        handheldItem(ModItems.MAGNITE_HAMMER.get());
 
         handheldItem(ModItems.MYTHRIL_SWORD.get());
         handheldItem(ModItems.MYTHRIL_PICKAXE.get());
@@ -93,6 +94,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.CELESTIUM_AXE.get());
         handheldItem(ModItems.CELESTIUM_SHOVEL.get());
         handheldItem(ModItems.CELESTIUM_HOE.get());
+        handheldItem(ModItems.CELESTIUM_HAMMER.get());
 
         handheldItem(ModItems.VIRIDIUM_SWORD.get());
         handheldItem(ModItems.VIRIDIUM_PICKAXE.get());

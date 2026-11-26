@@ -69,6 +69,7 @@
   "item.ores.magnite_axe": "Magnite Axe",
   "item.ores.magnite_shovel": "Magnite Shovel",
   "item.ores.magnite_hoe": "Magnite Hoe",
+  "item.ores.magnite_hammer": "Magnite Hammer",
   "item.ores.magnite_helmet": "Magnite Helmet",
   "item.ores.magnite_chestplate": "Magnite Chestplate",
   "item.ores.magnite_leggings": "Magnite Leggings",
@@ -140,6 +141,7 @@
   "item.ores.celestium_axe": "Celestium Axe",
   "item.ores.celestium_shovel": "Celestium Shovel",
   "item.ores.celestium_hoe": "Celestium Hoe",
+  "item.ores.celestium_hammer": "Celestium Hammer",
 
   "block.ores.cobalt_furnace": "Cobalt Furnace",
   "block.ores.adamantite_furnace": "Adamantite Furnace",

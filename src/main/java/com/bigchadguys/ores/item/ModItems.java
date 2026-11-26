@@ -193,6 +193,13 @@ public class ModItems {
             )
     );
 
+    public static final DeferredItem<Item> MAGNITE_HAMMER = ITEMS.register("magnite_hammer", () ->
+            new HammerItem(
+                    ModTiers.MAGNITE,
+                    new Item.Properties().attributes(PickaxeItem.createAttributes(ModTiers.MAGNITE, 6.0f, -3.0f))
+            )
+    );
+
     public static final DeferredItem<Item> MAGNITE_HELMET = ITEMS.register("magnite_helmet", () ->
             new ArmorItem(
                     ModArmorMaterials.MAGNITE,
