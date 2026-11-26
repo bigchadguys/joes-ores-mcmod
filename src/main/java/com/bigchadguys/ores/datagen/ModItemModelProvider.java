@@ -76,6 +76,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.MYTHRIL_AXE.get());
         handheldItem(ModItems.MYTHRIL_SHOVEL.get());
         handheldItem(ModItems.MYTHRIL_HOE.get());
+        handheldItem(ModItems.MYTHRIL_HAMMER.get());
 
         handheldItem(ModItems.ORICHALCUM_SWORD.get());
         handheldItem(ModItems.ORICHALCUM_PICKAXE.get());
