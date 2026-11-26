@@ -46,7 +46,7 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
                 block + "_drops_petrified_bark",
                 new AddItemModifier(new LootItemCondition[] {
                         LootTableIdCondition.builder(ResourceLocation.parse("blocks/" + block)).build(),
-                        LootItemRandomChanceCondition.randomChance(0.00025f).build()
+                        LootItemRandomChanceCondition.randomChance(0.0025f).build()
                 }, ModItems.PETRIFIED_BARK.get())
         ));
 
