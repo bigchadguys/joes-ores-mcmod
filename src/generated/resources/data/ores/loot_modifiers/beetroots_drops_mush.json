@@ -6,7 +6,7 @@
       "loot_table_id": "minecraft:blocks/beetroots"
     },
     {
-      "chance": 5.0E-4,
+      "chance": 0.005,
       "condition": "minecraft:random_chance"
     }
   ],

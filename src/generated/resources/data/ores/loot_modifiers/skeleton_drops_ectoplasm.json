@@ -6,7 +6,7 @@
       "loot_table_id": "minecraft:entities/skeleton"
     },
     {
-      "chance": 4.0E-4,
+      "chance": 0.004,
       "condition": "minecraft:random_chance"
     }
   ],
